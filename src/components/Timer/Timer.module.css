@@ -1,0 +1,64 @@
+.Timer {
+  font-size: 100px;
+  padding: 10px;
+}
+
+.StartButton {
+  font-family: "Varela Round", sans-serif;
+  background-color: rgba(241, 189, 221, 0.363);
+  color: rgb(255, 255, 255);
+  padding: 10px 30px;
+  margin: 3px;
+  border: none;
+  border-radius: 3px;
+  font-size: 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: rgba(117, 68, 98, 0.363) 0px 5px 15px;
+}
+
+.SkipButton {
+  background: none;
+  border: none;
+  position: relative;
+  margin: 15px;
+  top: 10px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.SoundButton {
+  composes: SkipButton;
+}
+
+.RoundMessage {
+  font-size: 16px;
+  padding: 10px;
+  font-style: italic;
+}
+
+@media screen and (max-width: 500px) {
+  .Timer {
+    font-size: 60px;
+  }
+
+  .StartButton {
+    font-size: 15px;
+    padding: 5px 10px;
+  }
+
+  .SkipButton {
+    max-width: 15px;
+    max-height: 15px;
+    top: 7px;
+  }
+
+  .SoundButton {
+    composes: SkipButton;
+  }
+
+  .RoundMessage {
+    font-size: 10px;
+    padding-bottom: 7px;
+  }
+}

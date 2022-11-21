@@ -1,0 +1,28 @@
+.Button {
+  font-family: "Varela Round", sans-serif;
+  background-color: rgba(53, 30, 44, 0.363);
+  box-shadow: rgba(117, 68, 98, 0.363) 0px 5px 15px;
+  color: rgba(255, 255, 255);
+  padding: 8px;
+  margin: 3px;
+  border: none;
+  border-radius: 3px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.ButtonActive {
+  composes: Button;
+  background-color: rgba(73, 62, 69, 0.658);
+}
+
+.Button:focus,
+.Button:hover {
+  background-color: rgba(9, 95, 114, 0.658);
+}
+
+@media screen and (max-width: 500px) {
+  .Button {
+    font-size: 12px;
+  }
+}
